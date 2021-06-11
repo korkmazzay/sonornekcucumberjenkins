@@ -1,0 +1,113 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-09T21:54:03.486Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4077000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.start()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Dashboard tab verification",
+        "description": "",
+        "id": "dashboard-tab-functionality;dashboard-tab-verification",
+        "after": [
+          {
+            "result": {
+              "duration": 101000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.Hooks.end()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 216000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user enters valid admin username and password",
+            "match": {
+              "location": "steps.LoginSteps.user_enters_valid_admin_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3443000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "steps.LoginSteps.user_clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 38000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "admin user is successfully logged in",
+            "match": {
+              "location": "steps.LoginSteps.admin_user_is_successfully_logged_in()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 129000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "verify the following tabs on dashboard",
+            "match": {
+              "location": "steps.DashboardSteps.verify_the_following_tabs_on_dashboard(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Admin",
+                  "PIM",
+                  "Leave",
+                  "Time",
+                  "Recruitment",
+                  "Performance",
+                  "Dashboard",
+                  "Directory"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@dashboardtabs"
+          }
+        ]
+      }
+    ],
+    "name": "Dashboard tab functionality",
+    "description": "",
+    "id": "dashboard-tab-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Dashboard.feature",
+    "tags": []
+  }
+]

@@ -1,0 +1,16 @@
+/Users/korkmaz/IdeaProjects/hrms/src/test/java/utils/CommonMethods.java
+/Users/korkmaz/IdeaProjects/hrms/src/test/java/Runners/RegressionRunner.java
+/Users/korkmaz/IdeaProjects/hrms/src/test/java/utils/ExcelReading.java
+/Users/korkmaz/IdeaProjects/hrms/src/test/java/steps/LoginSteps.java
+/Users/korkmaz/IdeaProjects/hrms/src/test/java/pages/DashboardPage.java
+/Users/korkmaz/IdeaProjects/hrms/src/test/java/steps/Hooks.java
+/Users/korkmaz/IdeaProjects/hrms/src/test/java/steps/DashboardSteps.java
+/Users/korkmaz/IdeaProjects/hrms/src/test/java/Runners/SmokeRunner.java
+/Users/korkmaz/IdeaProjects/hrms/src/test/java/utils/Constants.java
+/Users/korkmaz/IdeaProjects/hrms/src/test/java/steps/EmployeeSearchSteps.java
+/Users/korkmaz/IdeaProjects/hrms/src/test/java/pages/AddEmployeePage.java
+/Users/korkmaz/IdeaProjects/hrms/src/test/java/pages/LoginPage.java
+/Users/korkmaz/IdeaProjects/hrms/src/test/java/utils/ConfigReader.java
+/Users/korkmaz/IdeaProjects/hrms/src/test/java/steps/AddEmployeeSteps.java
+/Users/korkmaz/IdeaProjects/hrms/src/test/java/pages/EmployeeListPage.java
+/Users/korkmaz/IdeaProjects/hrms/src/test/java/Runners/FailedRunner.java
