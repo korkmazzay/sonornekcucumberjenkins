@@ -1,0 +1,21 @@
+
+
+        **********HTTP RESPONSE CODES********
+
+200 OK----- Code indicates that request was successful.
+
+201 CREATED---- Code indicates that request was successful and resource was created
+             -- It is used to confirm success of a PUT and POST request
+
+400 BAD REQUEST----- It happens especially with POST and PUT requests, when the data does not pass the
+                  -- validation , or is in the wrong format
+
+404 NOT FOUND----- Response indicates that the required resource could not be found
+
+401 UNAUTHORIZED---- Error indicates that you need to perform authentication before accessing the resource
+
+405 METHOD NOT ALLOWED--- HTTP method used is not supported for this resource
+
+409 CONFLICT ---- Conflict request to create the same resource twice
+
+500 Internal Server Error----- Occurs due to some error on server side

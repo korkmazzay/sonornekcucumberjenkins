@@ -3,11 +3,56 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-06-09T21:54:03.486Z",
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2058000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is logged in with valid admin credentials",
+            "match": {
+              "location": "steps.EmployeeSearchSteps.user_is_logged_in_with_valid_admin_credentials()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1928000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user clicks on PIM option",
+            "match": {
+              "location": "steps.AddEmployeeSteps.user_clicks_on_pim_option()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 934000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user clicks on Add employee button",
+            "match": {
+              "location": "steps.AddEmployeeSteps.user_clicks_on_add_employee_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-22T20:42:46.613Z",
         "before": [
           {
             "result": {
-              "duration": 4077000000,
+              "duration": 3114000000,
               "status": "passed"
             },
             "match": {
@@ -15,14 +60,14 @@
             }
           }
         ],
-        "line": 3,
-        "name": "Dashboard tab verification",
+        "line": 33,
+        "name": "Adding multiple employees in a single execution",
         "description": "",
-        "id": "dashboard-tab-functionality;dashboard-tab-verification",
+        "id": "adding-employees;adding-multiple-employees-in-a-single-execution",
         "after": [
           {
             "result": {
-              "duration": 101000000,
+              "duration": 87000000,
               "status": "passed"
             },
             "match": {
@@ -35,79 +80,59 @@
         "steps": [
           {
             "result": {
-              "duration": 216000000,
+              "duration": 32256000000,
               "status": "passed"
             },
-            "line": 4,
-            "name": "user enters valid admin username and password",
+            "line": 34,
+            "name": "add multiple employees and verify they are added successfully",
             "match": {
-              "location": "steps.LoginSteps.user_enters_valid_admin_username_and_password()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 3443000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user clicks on login button",
-            "match": {
-              "location": "steps.LoginSteps.user_clicks_on_login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 38000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "admin user is successfully logged in",
-            "match": {
-              "location": "steps.LoginSteps.admin_user_is_successfully_logged_in()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 129000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "verify the following tabs on dashboard",
-            "match": {
-              "location": "steps.DashboardSteps.verify_the_following_tabs_on_dashboard(io.cucumber.datatable.DataTable)"
+              "location": "steps.AddEmployeeSteps.add_multiple_employees_and_verify_they_are_added_successfully(io.cucumber.datatable.DataTable)"
             },
             "rows": [
               {
                 "cells": [
-                  "Admin",
-                  "PIM",
-                  "Leave",
-                  "Time",
-                  "Recruitment",
-                  "Performance",
-                  "Dashboard",
-                  "Directory"
+                  "FirstName",
+                  "MiddleName",
+                  "LastName"
+                ]
+              },
+              {
+                "cells": [
+                  "Jon0404",
+                  "MS",
+                  "US"
+                ]
+              },
+              {
+                "cells": [
+                  "Jack0404",
+                  "MS",
+                  "US"
+                ]
+              },
+              {
+                "cells": [
+                  "MS0909",
+                  "MS",
+                  "US"
                 ]
               }
             ],
-            "keyword": "Then "
+            "keyword": "When "
           }
         ],
         "tags": [
           {
-            "name": "@dashboardtabs"
+            "name": "@datatablewithheader"
           }
         ]
       }
     ],
-    "name": "Dashboard tab functionality",
+    "name": "Adding employees",
     "description": "",
-    "id": "dashboard-tab-functionality",
+    "id": "adding-employees",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/Dashboard.feature",
+    "uri": "file:src/test/resources/features/AddEmployee.feature",
     "tags": []
   }
 ]

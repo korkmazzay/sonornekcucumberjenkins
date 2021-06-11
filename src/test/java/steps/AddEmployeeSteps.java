@@ -3,11 +3,13 @@ package steps;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 import pages.AddEmployeePage;
 import pages.DashboardPage;
 import utils.CommonMethods;
 import utils.Constants;
 import utils.ExcelReading;
+import utils.GlobalVariable;
 
 import java.util.Iterator;
 import java.util.List;
@@ -40,6 +42,9 @@ public class AddEmployeeSteps extends CommonMethods {
         sendText(add.firstName, firstName);
         sendText(add.middleName, middleName);
         sendText(add.lastName, lastName);
+        GlobalVariable.FirstName=firstName;
+        GlobalVariable.MiddleName=middleName;
+        GlobalVariable.LastName=lastName;
     }
 
     @When("user enters {string} {string} and {string} in the application")
@@ -101,4 +106,30 @@ public class AddEmployeeSteps extends CommonMethods {
             //assertion complete in HW
         }
     }
+    @When("capture the employeeId")
+    public void capture_the_employee_id() {
+       AddEmployeePage addEmployeePage=new AddEmployeePage();
+       GlobalVariable.empId=addEmployeePage.employeeId.getAttribute("value");
+
+    }
+
+    @Then("verify the data from frontend and backend")
+    public void verify_the_data_from_frontend_and_backend() {
+        System.out.println("Backend");
+        System.out.println("DBFirstName"+GlobalVariable.dbFirstName);
+        System.out.println("DBMiddleName"+GlobalVariable.dbMiddleName);
+        System.out.println("DBLastName"+GlobalVariable.dbLastName);
+        System.out.println("FrontEnd");
+        System.out.println("FirstName"+GlobalVariable.FirstName);
+        System.out.println("MiddleName"+GlobalVariable.MiddleName);
+        System.out.println("LastName"+GlobalVariable.LastName);
+
+        Assert.assertEquals(GlobalVariable.dbFirstName,GlobalVariable.FirstName);
+        Assert.assertEquals(GlobalVariable.dbMiddleName,GlobalVariable.MiddleName);
+        Assert.assertEquals(GlobalVariable.dbLastName,GlobalVariable.LastName);
+
+    }
+
+
+
 }
